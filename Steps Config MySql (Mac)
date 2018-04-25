@@ -1,0 +1,9 @@
+1. Adicionar o comando "mysql" no PATH do sistema;
+>> export PATH=$PATH:/usr/local/mysql/bin
+
+2. Conectar com o usuário "root" e informa logo após a senha;
+>> mysql -u root -p
+>> [password]
+
+3. Alterar a senha do usuaário para não usar SHA2 como senha;
+>> ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY '[password]';
