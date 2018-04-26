@@ -5,11 +5,11 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.br</groupId>
-    <artifactId>product-service</artifactId>
+    <artifactId>domain-service</artifactId>
     <version>1.0-SNAPSHOT</version>
     <packaging>jar</packaging>
 
-    <name>products</name>
+    <name>domain</name>
     <description>Rest API for CRUD of Products.</description>
 
     <parent>
