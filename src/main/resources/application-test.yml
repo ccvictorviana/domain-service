@@ -1,0 +1,13 @@
+server:
+  port: 7531
+spring:
+  datasource:
+    url : jdbc:mysql://localhost:3306/domain?useSSL=false
+    username : root
+    password : 123456789
+  jpa:
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQL5InnoDBDialect

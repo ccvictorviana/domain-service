@@ -1,6 +1,7 @@
-package com.br.product.teste.repository;
+package com.br.product.teste.repository.builder;
 
 import com.br.product.domain.Product;
+import com.br.product.teste.config.FactoryData;
 
 import java.util.Date;
 
@@ -32,6 +33,12 @@ public class ProductBuilder {
 
     public ProductBuilder withUpdated(Date updated){
         this.updated = updated;
+        return this;
+    }
+
+    public ProductBuilder newBasic(){
+        withName("Product " + FactoryData.generateString(10));
+        withCreated(new Date());
         return this;
     }
 

@@ -11,11 +11,7 @@ import java.util.Date;
 @Entity
 @Table(name = "product")
 @EntityListeners(AuditingEntityListener.class)
-public class Product {
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long id;
-
+public class Product extends AEntity {
     @NotBlank
     private String name;
 
@@ -28,14 +24,6 @@ public class Product {
     @Temporal(TemporalType.TIMESTAMP)
     @LastModifiedDate
     private Date updated;
-
-    public Long getId() {
-        return id;
-    }
-
-    public void setId(Long id) {
-        this.id = id;
-    }
 
     public String getName() {
         return name;
