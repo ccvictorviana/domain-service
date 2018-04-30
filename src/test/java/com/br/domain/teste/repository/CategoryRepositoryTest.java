@@ -1,11 +1,11 @@
 package com.br.domain.teste.repository;
 
 import com.br.domain.domain.Category;
-import com.br.domain.repository.interfaces.ICategoryRepository;
+import com.br.domain.repository.interfaces.CategoryRepository;
 import com.br.domain.teste.base.AEntityRepositoryTest;
 import com.br.domain.teste.builder.CategoryBuilder;
 import com.br.domain.teste.builder.FactoryData;
-import com.br.domain.teste.config.DomainTestConfig;
+import com.br.domain.teste.config.RepositoryTestConfig;
 import org.junit.Assert;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -21,8 +21,8 @@ import java.util.Optional;
 @RunWith(SpringRunner.class)
 @DataJpaTest
 @AutoConfigureTestDatabase(replace= AutoConfigureTestDatabase.Replace.NONE)
-@ContextConfiguration(classes = DomainTestConfig.class)
-public class CategoryRepositoryTest extends AEntityRepositoryTest<Category, ICategoryRepository> {
+@ContextConfiguration(classes = RepositoryTestConfig.class)
+public class CategoryRepositoryTest extends AEntityRepositoryTest<Category, CategoryRepository> {
 
     @Test
     @Override

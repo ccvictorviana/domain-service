@@ -1,4 +1,7 @@
 package com.br.domain.service;
 
-public class ProductService {
+import com.br.domain.domain.Product;
+
+public interface ProductService {
+    void save(Product product);
 }

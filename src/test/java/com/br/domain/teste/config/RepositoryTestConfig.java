@@ -5,6 +5,6 @@ import org.springframework.context.annotation.Configuration;
 
 @Configuration
 @ComponentScan(basePackages = { "com.br.domain" })
-public class DomainTestConfig {
+public class RepositoryTestConfig {
 
 }
